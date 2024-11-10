@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ShopToday</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!--meta data-->
+    <meta name="title" content="Buy the best products | ShopToday">
+    <meta name="description" content="If you are looking for best quality products at the best price then check our shop now">
+    <meta name="keywords" content="shop, mobile, laptop, shirts, pants, dress, earphone, headphone, earbud">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Link to Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!--googel font-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+
+    <!--Internal custom CSS-->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+      .column-content {
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: #f8f8f8;
+      }
+      .social-media-icons i {
+        font-size: 2rem;
+        margin: 0 10px;
+        color: #333;
+      }
+      a{
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary w-100 sticky-top shadow-sm z-3 d-flex flex-column">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#latest-products">Latest Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#onSale">onSale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row bg-white container-fluid">
+        <div>
+          <img src="images/logo.png" alt="" />
+        </div>
+        <div class="w-100 p-1">
+          <form
+            class="d-flex w-75 p-3 mr-5 focus-ring-dark container-fluid"
+            role="search">
+            <input
+              class="form-control shadow-none me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"/>
+            <button class="btn btn-info text-white" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleAutoplaying shop"
+      class="carousel slide"
+      data-bs-ride="carousel"
+>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/slider1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5 class="fs-2 font-weight-bolder">
+              Get Your Hands on the Best Products Today
+            </h5>
+            <p class="fs-5">
+              Shop now and enjoy exclusive deals on our top-rated items. Don't
+              miss out!
+            </p>
+            <button class="btn btn-info text-white">Shop Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5 class="fs-2 font-weight-bolder">
+              Get Your Hands on the Best Products Today
+            </h5>
+            <p class="fs-5">
+              Shop now and enjoy exclusive deals on our top-rated items. Don't
+              miss out!
+            </p>
+            <button class="btn btn-info text-white">Shop Now</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/slider3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5 class="fs-2 font-weight-bolder">
+              Get Your Hands on the Best Products Today
+            </h5>
+            <p class="fs-5">
+              Shop now and enjoy exclusive deals on our top-rated items. Don't
+              miss out!
+            </p>
+            <button class="btn btn-info text-white">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      ></button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      ></button>
+    </div>
+
+    <!--latest products grid-->
+
+    <div class="mt-2 p-3" id="latest-products">
+      <h3 class="m-4 text-center fs-sm-3">Latest Products</h3>
+      <div class="d-flex flex-wrap m-4">
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f1.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Earbud with ANC</p>
+          <p style="font-size: 0.8rem">
+            Tws Black Bluetooth Earbuds. Bluetooth Headphone. Bluetooth
+            Headphone
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f2.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Vivo earphone</p>
+          <p style="font-size: 0.8rem">
+            Vivo In Year Yearphone is the best sound quality-white with free one
+            - Emphasizing Value
+          </p>
+          <h4>$9</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$14</strike> -20%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f3.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Special AirPods</p>
+          <p style="font-size: 0.8rem">
+            For apple TWS Edition With High Base & Long Battery Wireless
+            Bluetooth Earbuds
+          </p>
+          <h4>$15</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$22</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f4.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Earphone vivo</p>
+          <p style="font-size: 0.8rem">
+            vivo Earphone Wireless Headphones Fone Bluetooth Earphones Mic Pods
+            In Ear Earbuds
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f5.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Card Holder</p>
+          <p style="font-size: 0.8rem">
+            Premium card holder to hold credit and debit card securely in wallet
+            with nfc system
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f3.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Earbud Wireless</p>
+          <p style="font-size: 0.8rem">
+            Tws Black Bluetooth Earbuds. Bluetooth Headphone. Bluetooth
+            Headphone
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center m-5">
+        <button type="button" class="btn btn-outline-info">
+          Load More Products
+        </button>
+      </div>
+    </div>
+
+    <!--onsale banner-->
+    <div
+      class="text-center container-fluid p-3"
+      style="background-color: #f8f8f8"
+    >
+      <img class="ml-auto" src="images/top.png" alt="" width="66%" />
+    </div>
+
+    <!--Flash products grid-->
+    <div class="mt-2 p-3" id="onSale">
+      <h3 class="m-4 text-center fs-sm-3">Flash Sale</h3>
+      <div class="d-flex flex-wrap m-4">
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f1.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Earbud with ANC</p>
+          <p style="font-size: 0.8rem">
+            Tws Black Bluetooth Earbuds. Bluetooth Headphone. Bluetooth
+            Headphone
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f2.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Vivo earphone</p>
+          <p style="font-size: 0.8rem">
+            Vivo In Year Yearphone is the best sound quality-white with free one
+            - Emphasizing Value
+          </p>
+          <h4>$9</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$14</strike> -20%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f3.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Special AirPods</p>
+          <p style="font-size: 0.8rem">
+            For apple TWS Edition With High Base & Long Battery Wireless
+            Bluetooth Earbuds
+          </p>
+          <h4>$15</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$22</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f4.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Earphone vivo</p>
+          <p style="font-size: 0.8rem">
+            vivo Earphone Wireless Headphones Fone Bluetooth Earphones Mic Pods
+            In Ear Earbuds
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f5.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Card Holder</p>
+          <p style="font-size: 0.8rem">
+            Premium card holder to hold credit and debit card securely in wallet
+            with nfc system
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+
+        <!--product-->
+        <div class="col-sm-6 col-md-4 col-lg-2 p-4 shadow-sm rounded">
+          <div>
+            <img src="images/f3.jpg" class="img-fluid" alt="" />
+          </div>
+          <p class="fs-5">Earbud Wireless</p>
+          <p style="font-size: 0.8rem">
+            Tws Black Bluetooth Earbuds. Bluetooth Headphone. Bluetooth
+            Headphone
+          </p>
+          <h4>$10</h4>
+          <h5 style="font-size: 0.9rem; color: orange">
+            <strike>$15</strike> -30%
+          </h5>
+          <button class="btn btn-info text-white">Add to Cart</button>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center m-5">
+        <button type="button" class="btn btn-outline-info">
+          Load More Products
+        </button>
+      </div>
+    </div>
+
+    <!--about section-->
+
+    <div class="row" id="about">
+      <div class="col d-flex align-items-center justify-content-sm-center m-4">
+        <img class="rounded" src="images/about.jpg" alt="" width="444vw" />
+      </div>
+      <div class="col text-start m-4">
+        <h3>About us</h3>
+        <p>
+          Lorem ipsum dolor, cumque? sit amet consectetur adipisicing elit.
+          Perspiciatis placeat minima ipsa aut mollitia, Explicabo veritatis
+          neque vero, sapiente delectus libero! sit amet consectetur adipisicing
+          elit. Perspiciatis placeat minima ipsa aut mollitia, sit optio
+          inventore eius explicabo recusandae similique cumque? sit amet
+          consectetur adipisicing elit. Perspiciatis placeat minima ipsa aut
+          mollitia, Explicabo veritatis neque vero, sapiente delectus libero!
+          Eaque nobis non recusandae facere, natus adipisci, doloribus dolorum
+          est eveniet odio quis in veniam.
+        </p>
+        <button class="btn btn-info text-white">Read More</button>
+      </div>
+    </div>
+
+    <!--contact form-->
+
+    <div class="container mt-4" id="contact">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-12">
+          <h2 class="text-center my-4">Contact Us</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control shadow-none"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control shadow-none"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-info text-white">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!-- First Column (Links) -->
+        <div class="col-lg-4 col-md-6 col-12 column-content pt-4">
+          <h4>Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-decoration-none">About</a></li>
+            <li>
+              <a href="#latest-products" class="text-decoration-none">Shop</a>
+            </li>
+            <li><a href="#contact" class="text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Second Column (Links) -->
+        <div class="col-lg-4 col-md-6 col-12 column-content pt-4">
+          <h4>Useful Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none">Blog</a></li>
+            <li><a href="#" class="text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none">Terms</a></li>
+            <li><a href="#" class="text-decoration-none">Privacy</a></li>
+          </ul>
+        </div>
+
+        <!-- Third Column (Social Media Icons) -->
+        <div class="col-lg-4 col-md-12 col-12 column-content pt-4">
+          <h4>Follow Us</h4>
+          <div class="social-media-icons">
+            <a href="#" target="_blank" class="text-decoration-none"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="#" target="_blank" class="text-decoration-none"
+              ><i class="bi bi-twitter"></i
+            ></a>
+            <a href="#" target="_blank" class="text-decoration-none"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" target="_blank" class="text-decoration-none"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Copyright-->
+    <div class="container-fluid p-3 text-center text-white bg-secondary">
+      <p>
+        Copyright © 2024 | All rights reserved |<a
+          href="#"
+          class="text-white text-decoration-none"
+        >
+          ShopToday.com</a
+        >
+      </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
